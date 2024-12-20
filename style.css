@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between certificates */
+  padding: 20px;
+}
+
+.gallery .item {
+  width: 100%; /* Makes each item take full width */
+  max-width: 1000px; /* Optional: Restricts the maximum width of each item */
+}
+
+.gallery img {
+  width: 100%; /* Ensures the image fills the container width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image fits within the container without cropping */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery .desc {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px; /* Adds space between the image and title */
+}
+
+.gallery .desc:hover {
+  color: #007BFF; /* Adds hover effect to title */
+}
